@@ -1,0 +1,8 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Back-end challenge for Scoutbase",
+  "main": "src/index.js",
+  "author": "Prasanna Mestha",
+  "license": "MIT"
+}
