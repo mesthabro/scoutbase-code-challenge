@@ -4,12 +4,31 @@ This task is for demonstrating your understanding of HTML, CSS, Javascript, Reac
 
 If you’re doing the front-end only, you must use the https://countries.trevorblades.com endpoint for GraphQL API.
 
-Preferred libraries:
+## Installation
+```
+$ yarn
+```
+
+## Usage
+Navigate to the fron-end directory and run the following command in the terminal:
+```
+$ yarn start
+```
+Now open http://localhost:1234/ in the browser
+
+## TODO Improvements
+1. Add UI theming
+2. Add tests
+3. GraphQL caching
+4. Preloading & lazy loading
+
+
+## Preferred libraries:
   1. `styled-components` for styling
   2. `apollo-client` for consuming GraphQL API
   3. `react-router` or any alternative to implement routing
 
-Instructions:
+## Instructions:
 
 1. Create a `create-react-app` repo.
 2. Add a router with routes:
