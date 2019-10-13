@@ -13,6 +13,7 @@ type Mutation {
 }
 
 type Movie {
+    id: ID!
     title: String!
     year: Int!
     rating: Float!
@@ -22,12 +23,14 @@ type Movie {
 }
 
 type Actor {
+    id: ID!
     name: String!
     birthday: String!
     country: String!
 }
 
 type Director {
+    id: ID!
     name: String!
     birthday: String!
     country: String!
