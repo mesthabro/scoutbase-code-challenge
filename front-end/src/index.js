@@ -6,6 +6,7 @@ import { ApolloProvider } from '@apollo/react-hooks'
 
 import Home from './pages/home'
 import Countries from './pages/countries'
+import Country from './pages/country'
 
 import { Navbar } from './components/nav'
 import { AppContainer } from './components/layoutElements'
@@ -24,6 +25,7 @@ const App = () => (
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/countries" component={Countries} />
+                    <Route exact path="/countries/:code" component={Country} />
                 </Switch>
             </AppContainer>
         </Router>
