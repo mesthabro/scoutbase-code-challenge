@@ -9,6 +9,7 @@ import Countries from './pages/countries'
 import Country from './pages/country'
 
 import { Navbar } from './components/nav'
+import { TextLink } from './components/typography'
 import { AppContainer } from './components/layoutElements'
 
 import client from './apollo'
@@ -19,7 +20,9 @@ const App = () => (
     <ApolloProvider client={client}>
         <Router history={history}>
             <Navbar>
-                Scoutbase Assignment
+                <AppContainer>
+                    <TextLink to="/" color="#fff" big="true">Scoutbase Assignment</TextLink>
+                </AppContainer>
             </Navbar>
             <AppContainer>
                 <Switch>

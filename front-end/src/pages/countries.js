@@ -38,11 +38,11 @@ const Countries = () => {
             <CardBody>
                 <P>Languages:</P>
                 <OL>
-                    {
-                        country.languages.map(language => (
-                            <LI key={language.code}>{language.name} <SmallItalicText>({language.native})</SmallItalicText></LI>
-                        ))
-                    }
+                {
+                    country.languages.map(language => (
+                        <LI key={language.code}>{language.name} <SmallItalicText>({language.native})</SmallItalicText></LI>
+                    ))
+                }
                 </OL>
             </CardBody>
         </Card>

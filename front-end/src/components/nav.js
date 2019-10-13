@@ -6,6 +6,6 @@ export const Navbar = styled.nav`
     line-height: 50px;
     padding: 5px 40px;
     box-sizing: border-box;
-    background-color: #3e64ff;
-    color: #fff;
+    background-color: #263238;
+    color: #fafafa;
 `

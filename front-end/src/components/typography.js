@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const BigText = styled.span`
     font-weight: 600;
-    color: #4cc5ff;
+    color: #212121;
 `
 
 export const SmallText = styled.small`
@@ -46,7 +46,8 @@ export const TextLink = styled(Link)`
     font-weight: ${props => props.bold ? '600' : 'inherit'};
     font-size: ${props => props.big ? '1.2rem' : 'inherit'};
     border: 1px solid ${props => props.btn ? props.scolor : 'none'};
-    padding: ${props => props.btn ? '5px 10px' : 'inherit'};
-    border-radius: 3px;
+    padding: ${props => props.btn ? '5px 15px' : 'inherit'};
     display: ${props => props.btn ? 'inline' : 'contents'};
+    background-color: ${props => props.fill || 'none'};
+    box-shadow: 0px 0px 1px #ddd;
 `
