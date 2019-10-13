@@ -1,6 +1,5 @@
 function movies (root, args, context, info) {
-    // TODO
-    return []
+    return context.prisma.movies()
 }
 
 module.exports = {

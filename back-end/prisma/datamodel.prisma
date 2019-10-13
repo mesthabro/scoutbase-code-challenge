@@ -1,0 +1,34 @@
+type Movie {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    title: String!
+    year: Int!
+    rating: Float!
+    scoutbase_rating: Float
+    actors: [Actor!]
+    directors: [Director!]
+}
+
+type Actor {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    name: String!
+    birthday: String!
+    country: String!
+}
+
+type Director {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    name: String!
+    birthday: String!
+    country: String!
+}
+
+type User {
+    id: ID! @id
+    createdAt: DateTime! @createdAt
+    username: String! @unique
+    password: String!
+    name: String   
+}

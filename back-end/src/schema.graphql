@@ -7,6 +7,9 @@ type Query {
 type Mutation {
     createUser(username: String, password: String, name: String): AuthData
     login(username: String, password: String): AuthData
+    addActor(name: String!, birthday: String!, country: String!): Actor
+    addDirector(name: String!, birthday: String!, country: String!): Actor
+    addMovie(title: String!, year: Int!, rating: Float!, actors: [String!], directors: [String!]): Movie
 }
 
 type Movie {

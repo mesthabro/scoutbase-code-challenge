@@ -1,10 +1,12 @@
+const { prisma } = require('./generated/prisma-client')
 const { startServer } = require('./server')
 const resolvers = require('./resolvers')
 
 function main () {
     const typeDefs = initTypeDefs()
     const resolvers = initResolvers()
-    startServer({ typeDefs, resolvers })
+    const context = initContext()
+    startServer({ typeDefs, resolvers, context })
 }
 
 function initTypeDefs () {
@@ -13,6 +15,12 @@ function initTypeDefs () {
 
 function initResolvers () {
     return { ...resolvers }
+}
+
+function initContext () {
+    return () => ({
+        prisma,
+    })
 }
 
 main()
