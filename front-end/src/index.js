@@ -5,6 +5,7 @@ import { createBrowserHistory } from 'history'
 import { ApolloProvider } from '@apollo/react-hooks'
 
 import Home from './pages/home'
+import Countries from './pages/countries'
 
 import { Navbar } from './components/nav'
 import { AppContainer } from './components/layoutElements'
@@ -22,6 +23,7 @@ const App = () => (
             <AppContainer>
                 <Switch>
                     <Route exact path="/" component={Home} />
+                    <Route exact path="/countries" component={Countries} />
                 </Switch>
             </AppContainer>
         </Router>
