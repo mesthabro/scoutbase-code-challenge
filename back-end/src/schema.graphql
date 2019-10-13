@@ -1,0 +1,41 @@
+directive @isAuthenticated on FIELD_DEFINITION
+
+type Query {
+    movies: [Movie!]
+}
+
+type Mutation {
+    createUser(username: String, password: String, name: String): AuthData
+    login(username: String, password: String): AuthData
+}
+
+type Movie {
+    title: String!
+    year: Int!
+    rating: Float!
+    scoutbase_rating: Float @isAuthenticated
+    actors: [Actor!]
+    directors: [Director!]
+}
+
+type Actor {
+    name: String!
+    birthday: String!
+    country: String!
+}
+
+type Director {
+    name: String!
+    birthday: String!
+    country: String!
+}
+
+type AuthData {
+    token: String!
+    user: User!
+}
+
+type User {
+    id: ID!
+    name: String
+}

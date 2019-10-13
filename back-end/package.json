@@ -4,5 +4,16 @@
   "description": "Back-end challenge for Scoutbase",
   "main": "src/index.js",
   "author": "Prasanna Mestha",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "graphql-tools": "^4.0.5",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
 }
